@@ -1,6 +1,6 @@
 # README
 
-Application AirAlien by the AirBnB motives
+Application AirAlien based on the AirBnB motives
 
 Build using:
 
