@@ -1,0 +1,42 @@
+@import 'toastr/toastr';
+
+.form-login {
+  width: 100%;
+  max-width: 430px;
+  padding: 5px;
+  margin: auto;
+}
+.sign_in{
+  padding-right: 10px;
+}
+.navbar-brand{
+  padding-left: 10px;
+}
+::-webkit-input-placeholder {
+   font-style: italic;
+}
+:-moz-placeholder {
+   font-style: italic;
+}
+::-moz-placeholder {
+   font-style: italic;
+}
+:-ms-input-placeholder {
+   font-style: italic;
+}
+
+.avatar-small {
+  width: 20px;
+}
+.avatar-medium {
+  width: 40px;
+}
+.avatar-large {
+  width: 60px;
+}
+.avatar-full {
+  width: 100%;
+}
+body {
+  padding-top: 4.5rem;
+}
