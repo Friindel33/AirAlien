@@ -9,7 +9,14 @@
 .sign_in{
   padding-right: 10px;
 }
-.navbar-brand{
+.panel-default .panel-heading {
+  color: #565a5c;
+  background-color: #edefed;
+  font-size: 18px;
+  font-weight: 480;
+}
+.navbar-brand .navbar-default {
+  color: #FF5A5F;
   padding-left: 10px;
   font-size: 2em;
   font-weight: 400;
@@ -54,6 +61,7 @@ body {
   background-color: #ff5a5f;
   color: #fff;
   padding: 10px 25px 10px 25px;
+  max-width: 430px;
 }
 .btn-primary.btn:hover, .btn-primary.btn:focus {
   border-color: #ff7e82;
@@ -106,4 +114,32 @@ body {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
+}
+.form-control {
+  border-radius: 2px;
+}
+.sidebar-list {
+  padding-left: 0px;
+  list-style: none;
+}
+.sidebar-item {
+  padding: 0px;
+  font-size: 16px;
+  color: #82888a;
+  border-bottom: 1px solid #CCC;
+}
+
+.sidebar-link {
+  color: #82888a;
+  text-decoration: none;
+}
+
+.sidebar-link:hover, .sidebar-link:focus {
+  color: #cacccd;
+  text-decoration: none;
+}
+.active.sidebar-link {
+  color: #565a5c;
+  font-weight: bold;
+  text-decoration: none;
 }

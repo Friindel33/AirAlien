@@ -22,7 +22,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control", placeholder: "Confirm New Password" %>
   </div>
   <br/>
-  <div class="actions">
+  <div class="actions form-login">
     <%= f.submit "Sign up", class: 'btn btn-primary' %>
     <%= link_to "Sign up with Facebook", user_facebook_omniauth_authorize_path, class: "btn btn-primary" %>
   </div>
