@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+
   root 'pages#home'
+
   devise_for  :users,
               :path => '',
               :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit => 'profile'},
@@ -10,4 +12,5 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:show]
+  resources :rooms 
 end
