@@ -75,9 +75,8 @@ body {
   outline: none;
 }
 .btn-primary.btn {
-  width: 100%;
   border-radius: 2px;
-  padding: 10px 0;
+  padding: 10px 10px;
   margin-top: 10px;
 }
 
@@ -144,4 +143,52 @@ body {
   color: #565a5c;
   font-weight: bold;
   text-decoration: none;
+}
+label {
+  color: #565a5c;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+select {
+  color: #565a5c;
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px;
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance: none;
+}
+/* this bit doesn't work */
+.select:before {
+  content: '\25bc';
+  font-size: 1.2em;
+  float: right;
+  color: #82888A;
+  top: 40px;
+  right: 50px;
+  transform: scale(0.84, 0.42);
+}
+input[type="checkbox"] {
+  height: 1.25em;
+  width: 1.25em;
+  margin-bottom: -0.25em;
+  margin-right: 5px;
+  vertical-align: top;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  appearance: none;
+  -moz-appearance:none;
+  -webkit-appearance: none;
+}
+input[type="checkbox"]:checked:before {
+  content: '\2713';
+  position: absolute;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-align: center;
+  width: 1.25em;
+  color: #ff5a5f;
 }

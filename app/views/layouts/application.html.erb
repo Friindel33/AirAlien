@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2f1fb330a8.js" crossorigin="anonymous"></script>
     <title>AirAlien</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -50,6 +51,12 @@
                   <%= link_to 'Sign Up', new_user_registration_path, class: "nav-link" %>
                 </li>
               <% end %>
+              <li class="nav-item">
+                <i class="fa fa-envelope-o nav-link"></i>Messages
+              </li>
+              <li class="nav-item">
+                <i class="fa fa-home fa-lg nav-link"></i>Become a Host
+              </li>
             </ul>
           </div>
           </div>
