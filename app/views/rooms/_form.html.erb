@@ -1,0 +1,121 @@
+<div class="card">
+    <div class="card-header">
+      Create Your Beautiful place
+    </div>
+    <br />
+    <div class="card-text">
+      <div class="container">
+        <%= form_for @room do |f| %>
+
+          <div class="row">
+            <div class="col-md-4 select">
+              <div class="form-group">
+                <label>Home Type</label>
+                <%= f.select :home_type, [["Apartment","Apartment"], ["House","House"], ["Bed & Breakfast","Bed & Breakfast"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+              </div>
+            </div>
+
+              <div class="col-md-4 select">
+                <div class="form-group">
+                  <label for="">Room Type</label>
+                  <%= f.select :room_type, [["Entire","Entire"], ["Private","Private"], ["Shared","Shared"]], prompt: "Select...", class: "form-control" %>
+                </div>
+              </div>
+
+                <div class="col-md-4 select">
+                  <div class="form-group">
+                    <label for="">Accomodate</label>
+                    <%= f.select :accomodate, [["1","1"], ["2","2"], ["3","3"], ["4","4"], ["5","5"], ["6+","6"]], prompt: "Select...", class: "form-control" %>
+                  </div>
+                  <br />
+                </div>
+
+          </div>
+          <div class="row">
+              <div class="col-md-4 select">
+                <div class="form-group">
+                  <label for="">Bedrooms</label>
+                  <%= f.select :bed_room, [["1","1"], ["2","2"], ["3","3"], ["4+","4"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+                </div>
+              </div>
+
+              <div class="col-md-4 select">
+                <div class="form-group">
+                  <label for="">Bathrooms</label>
+                  <%= f.select :bath_room, [["1","1"], ["2","2"], ["3","3"], ["4+","4"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+                </div>
+              </div>
+
+            </div>
+          <br />
+          <div class="row">
+            <div class="form-group">
+              <h6>Listing Name</h6>
+              <%= f.text_field :listing_name, placeholder: "Be clear and descriptive", class: "form-control" %>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="form-group">
+              <h6>Summary</h6>
+              <%= f.text_area :summary, rows: 5, placeholder: "Tell us about Your House", class: "form-control" %>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="form-group">
+              <h6>Address</h6>
+              <%= f.text_field :address, placeholder: "What is your address?", class: "form-control" %>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <%= f.check_box :is_tv %> TV
+              </div>
+              <div class="form-group">
+                <%= f.check_box :is_kitchen %> Kitchen
+              </div>
+              <div class="form-group">
+                <%= f.check_box :is_internet %> Internet
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <%= f.check_box :is_heating %> Heating
+              </div>
+              <div class="form-group">
+                <%= f.check_box :is_air %> Air Conditioning
+              </div>
+            </div>
+
+          </div>
+          <br />
+          <div class="row">
+            <div class="col-md-4">
+            <div class="form-group">
+              <h6>Price for one night</h6>
+              <div class="input-group">
+                <span class="input-group-text">£</span>
+                  <%= f.text_field :price, placeholder: "eg. £100", class: "form-control" %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="row">
+            <div class="form-group">
+              <%= f.check_box :active %> Active
+            </div>
+          </div>
+          <br />
+
+          <div class="actions">
+            <%= f.submit "Save", class: "btn btn-success" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+</div>
