@@ -5,7 +5,7 @@
     <br />
     <div class="card-text">
       <div class="container">
-        <%= form_for @room do |f| %>
+        <%= form_for @room, html: {multipath: true} do |f| %>
 
           <div class="row">
             <div class="col-md-4 select">
@@ -104,6 +104,23 @@
               </div>
             </div>
           </div>
+          <br />
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+                <span class="btn btn-default btn-file">
+                  <i class="fa fa-cloud-upload fa-lg"></i> Upload Photos
+                  <%= file_field_tag "images[]", type: :image, multiple: true %>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div id="photos">
+            <%= render 'photos/list' %>
+          </div>
+
           <br />
           <div class="row">
             <div class="form-group">
